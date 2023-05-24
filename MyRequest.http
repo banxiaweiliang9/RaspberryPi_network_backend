@@ -1,0 +1,79 @@
+POST http://localhost:3001/wendu
+Content-Type: application/json
+#时间 操作 光照 温度 湿度 土壤湿度
+
+{
+  "Timestamp": "2023-05-22 15:31:22",
+  "Action": "\u5b9a\u65f6\u8bb0\u5f55",
+  "Sensors": {
+    "light": 120.75,
+    "temperature": 11,
+    "air_humidity": 23,
+    "soil_humidity": 1
+  }
+}
+
+###
+POST http://106.15.41.125:3001/wendu
+Content-Type: application/json
+#时间 操作 光照 温度 湿度 土壤湿度
+
+{
+  "Timestamp": "2023-05-22 15:31:22",
+  "Action": "\u5b9a\u65f6\u8bb0\u5f55",
+  "Sensors": {
+    "light": 3210,
+    "temperature": 33122,
+    "air_humidity": 21233,
+    "soil_humidity": 11233
+  }
+}
+
+###
+POST http://localhost:3001/logs
+Content-Type: application/json
+#时间 操作 光照 温度 湿度 土壤湿度
+
+{
+  "Timestamp": "2023-05-22 15:31:22",
+  "Action": "\u5b9a\u65f6\u8bb0\u5f55",
+  "Sensors": {
+    "light": 120.75,
+    "temperature": 11,
+    "air_humidity": 23,
+    "soil_humidity": 1
+  }
+}
+
+###
+POST http://localhost:3001/img
+Content-Type: application/json
+#时间 操作 光照 温度 湿度 土壤湿度
+
+{
+  "fieldname": "file",
+  "originalname": "1.png",
+  "encoding": "7bit",
+  "mimetype": "image/png",
+  "destination": "./uploads",
+  "filename": "4c5781db70269d90cc57249e95a28894",
+  "path": "uploads\\4c5781db70269d90cc57249e95a28894",
+  "size": 904454
+}
+
+###
+POST http://localhost:5000/upload_files
+Content-Type: application/json
+#时间 操作 光照 温度 湿度 土壤湿度
+
+{
+  "fieldname": "file",
+  "originalname": "1.png",
+  "encoding": "7bit",
+  "mimetype": "image/png",
+  "destination": "./uploads",
+  "filename": "4c5781db70269d90cc57249e95a28894",
+  "path": "uploads\\4c5781db70269d90cc57249e95a28894",
+  "size": 904454
+}
+
