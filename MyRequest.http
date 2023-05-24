@@ -14,22 +14,6 @@ Content-Type: application/json
 }
 
 ###
-POST http://106.15.41.125:3001/wendu
-Content-Type: application/json
-#时间 操作 光照 温度 湿度 土壤湿度
-
-{
-  "Timestamp": "2023-05-22 15:31:22",
-  "Action": "\u5b9a\u65f6\u8bb0\u5f55",
-  "Sensors": {
-    "light": 3210,
-    "temperature": 33122,
-    "air_humidity": 21233,
-    "soil_humidity": 11233
-  }
-}
-
-###
 POST http://localhost:3001/logs
 Content-Type: application/json
 #时间 操作 光照 温度 湿度 土壤湿度
